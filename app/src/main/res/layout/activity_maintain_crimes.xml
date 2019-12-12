@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp"
+    tools:context=".Activities.MaintainCrimesActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/crime_maintain_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crime Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/maintain_input_crime_num"
+            android:layout_margin="8dp"
+           android:inputType="number"
+            android:layout_below="@+id/crime_maintain_name"
+            android:layout_marginTop="5dp"
+            android:hint="Crime Number"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:background="@drawable/edit_text_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/maintain_crime_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Crime Name"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"
+            android:textStyle="italic"
+            android:background="@drawable/edit_text_design"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_below="@+id/maintain_input_crime_num"/>
+        <EditText
+            android:id="@+id/maintain_crime_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Crime Description"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edit_text_design"
+            android:padding="15dp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_below="@+id/maintain_crime_name"/>
+        <Button
+            android:id="@+id/btn_apply_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Changes"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/buttons"
+            android:layout_below="@+id/maintain_crime_desc"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

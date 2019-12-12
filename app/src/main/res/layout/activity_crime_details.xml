@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CrimeDetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/can_add_to_favorites"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="CLICK BOTTOM ICON TO ADD TO FAVORITES"
+
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textSize="17sp"
+            android:gravity="top|center"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/can_add_to_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    <TextView
+    android:id="@+id/crime_detail_number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_light"
+    android:text="Crime Number"
+    android:textStyle="bold"
+        android:layout_marginTop="8dp"
+    android:textSize="17sp"
+    android:gravity="center"/>
+    <TextView
+        android:id="@+id/crime_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crime_detail_number"
+        android:layout_marginTop="8dp"
+        android:text="Crime Name"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/crime_detail_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/crime_detail_name"
+        android:text="Crime Description"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="17sp"
+        android:gravity="center"/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_to_favorites"
+        android:src="@drawable/add_to_bookmarks"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

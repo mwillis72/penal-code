@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AdminActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/crime_number"
+        android:layout_marginTop="20dp"
+
+        android:inputType="number"
+        android:padding="16dp"
+        android:hint="@string/crime_number"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/edit_text_design"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/crime_name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/crime_number"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:hint="@string/crime_name"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/edit_text_design"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/crime_desc"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/crime_name"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:hint="@string/crime_description"
+
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/edit_text_design"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_crime"
+        android:layout_below="@+id/crime_desc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/add_crime"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"/>
+</RelativeLayout>

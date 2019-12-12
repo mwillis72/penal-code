@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="16dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/book_crime_number"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Crime Number"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/book_crime_name"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Crime Name"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/book_crime_number"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/book_crime_desc"
+        android:layout_below="@+id/book_crime_name"
+
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Crime Desc"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+
+        android:textStyle="bold"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
